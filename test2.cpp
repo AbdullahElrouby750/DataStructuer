@@ -20,7 +20,7 @@ private: //private members.
 public: //public functions
 	binarysearchtree() : current(NULL), min(NULL), max(NULL),root(NULL),currenttail(NULL),target(NULL),temp(NULL), level(0),leafcount(0),halfParentcount(0),fullparentcount(0),nodecount(0) {}
 
-	void push(Type item) //insert an item
+	void push(Type item) //insert an item //update: use recursion instead...
 	{
 		node* newnode = new node;
 		newnode->data = item;
